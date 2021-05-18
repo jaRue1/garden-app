@@ -1,21 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return(
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">
+          <Link to="#" class="brand-logo">
             Logo
-          </a>
+          </Link>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="#">Products</a>
+              <Link to="/products">Products</Link>
             </li>
             <li>
-              <a href="#">Orders</a>
+              <Link to="/orders">Orders</Link>
             </li>
             <li>
-              <a href="#">Users</a>
+              <Link to="/users">Users</Link>
             </li>
           </ul>
         </div>
