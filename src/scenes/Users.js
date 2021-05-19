@@ -25,9 +25,10 @@ function Users() {
   <div>
   <ul class="collection with-header">
       <li class="collection-header"><h4>All Users</h4></li>
-      {!allUsers ? <h2>Loading...</h2> :allUsers.map(user =>{
+      {!allUsers ? <h2>Loading...</h2> : allUsers.map(user =>{
         return (
-        <li class="collection-item">Name: {user.firstName} {user.lastName} / Email: {user.email} </li>
+          // key ={user.id} need to add this somewhere
+        <li  class="collection-item">Name: {user.firstName} {user.lastName} / Email: {user.email} </li>
         )
       })}
   </ul>
