@@ -11,16 +11,16 @@ function Users() {
     .catch(err => console.log(err))
   },[])
   function createUser() {
-    fetch('http://localhost:5000/signup') , { 
+    fetch('http://localhost:5000/signup' , { 
       method:'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({newUser})
-    }
+      body: JSON.stringify(newUser)
+    })
   }
-  
+  console.log(allUsers)
   return (
   <div>
   <ul class="collection with-header">
