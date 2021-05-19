@@ -3,7 +3,7 @@ import React from "react"
 function Login() {
   return (
     <div class="container">
-      <div class="z-depth-3 y-depth-3 x-depth-3 grey green-text lighten-4 row">
+      <div class="z-depth-3 y-depth-3 x-depth-3 grey green-text lighten-4 row whole">
 
         <div class="section">
           <i class="mdi-alert-error red-text"></i>
@@ -47,7 +47,7 @@ function Login() {
               class="col  s6 btn btn-small white black-text  waves-effect z-depth-1 y-depth-1">
 
               Login
-              
+
             </button>
           </div>
         </center>
