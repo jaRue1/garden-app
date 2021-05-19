@@ -6,7 +6,7 @@ function Header() {
     <nav>
         <div class="nav-wrapper">
           <Link to="#" class="brand-logo">
-            Logo
+            Garden.io
           </Link>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
