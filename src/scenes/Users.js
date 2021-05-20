@@ -41,6 +41,8 @@ function Users() {
   <input onChange = {(e) => setNewUser({ ...newUser, email: e.target.value})} />
   <label>Password</label>
   <input onChange = {(e) => setNewUser({ ...newUser, password: e.target.value})} />
+  <label>Testing</label>
+  <input placeholder="Test" />
   <Button onClick = {() => createUser()}>Create User</Button>
   </div>
   )
