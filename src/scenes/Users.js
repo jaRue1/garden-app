@@ -22,7 +22,7 @@ function Users() {
   }
   console.log(allUsers)
   return (
-  <div>
+  <div className='container custom-container'>
   <ul class="collection with-header">
       <li class="collection-header"><h4>All Users</h4></li>
       {!allUsers ? <h2>Loading...</h2> : allUsers.map(user =>{
@@ -41,7 +41,6 @@ function Users() {
   <input onChange = {(e) => setNewUser({ ...newUser, email: e.target.value})} />
   <label>Password</label>
   <input onChange = {(e) => setNewUser({ ...newUser, password: e.target.value})} />
-
   <Button onClick = {() => createUser()}>Create User</Button>
   </div>
   )
