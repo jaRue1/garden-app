@@ -17,6 +17,7 @@ function Footer() {
         <div class="container">
           © 2014 Copyright Text
         </div>
+        {process.env.NODE_ENV} Mode {process.env.REACT_APP_API_ENDPOINT}
       </div>
     </footer>
   )
