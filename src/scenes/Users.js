@@ -5,7 +5,7 @@ function Users() {
   const [allUsers, setAllUsers] = useState()
   const [newUser, setNewUser] = useState({})
   useEffect(()=>{
-    fetch(`${process.env.REACT_APP_API_ENDPOINT} /users`)
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}/users`)
     .then(response => response.json())
     .then(data => setAllUsers(data))
     .catch(err => console.log(err))
